@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from 'react-scroll'
 
 
+
+
 const Sidebar = ({handleToggle}) => {
   return (
     <div
-        className=" bg-[#f2f7f8] min-h-[80vh] fixed w-full flex items-center justify-center"
+        className=" bg-fuchsia-500 min-h-[40vh] fixed w-20 flex items-center justify-center cursor-pointer"
     >
       <div className=" flex flex-col items-center  gap-5 ">
         <Link onClick={handleToggle} to="/home">
@@ -17,13 +19,13 @@ const Sidebar = ({handleToggle}) => {
           <nav>About</nav>
         </Link>
         
-        <Link onClick={handleToggle} to="/contact">
+        <Link onClick={handleToggle} to="/projects">
           {" "}
-          <nav>Contact</nav>
+          <nav>Projects</nav>
         </Link>
-        <Link onClick={handleToggle} to="/project">
+        <Link onClick={handleToggle} to="/Contact">
           {" "}
-          <nav>Project</nav>
+          <nav>contact</nav>
         </Link>
         
         

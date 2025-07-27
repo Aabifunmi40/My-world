@@ -19,7 +19,7 @@ const Navbar = () => {
 
        <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 ">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between  items-center ">
-           <h1 className="font-bold text-xl">My Portfolio</h1>
+           <h1 className="font-bold text-xl">Alabi Oluwafunmilayo</h1>
             <div className="flex max-tablet:hidden space-x-6  ">
           <nav><Link to="home" smooth duration={500} className="cursor-pointer hover:text-blue-500">Home</Link></nav>
           <nav><Link to="about" smooth duration={500} className="cursor-pointer hover:text-blue-500">About</Link></nav>

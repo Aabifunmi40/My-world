@@ -17,7 +17,7 @@ const Contact = () => {
         <form
           action="https://formsubmit.co/your-email@example.com"
           method="POST"
-          className="space-y-4 text-left"
+          // className="space-y-4 text-left"
         >
           {/* Hidden anti-spam field */}
           {/* <input type="hidden" name="_captcha" value="false" />
