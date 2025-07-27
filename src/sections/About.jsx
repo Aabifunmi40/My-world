@@ -35,9 +35,7 @@ const About = () => {
           <h2 className="text-2xl font-bold">About me</h2>
           <p className="mt-2">As a dedicated tutor in science, I bring a strong foundation in education and a commitment to fostering learning. My enthusiasm for software development has driven me to pursue frontend development, where I focus on building responsive and user-friendly web
              applications using React.js, Tailwind CSS, HTML, CSS, and JavaScript..</p>
-          {/* <div className="flex flex-wrap justify-center gap-2 mt-4">
-            {skills.map(skill => <span key={skill} className="bg-gray-800 c">{skill}</span>)}
-          </div> */}
+          
          
         </section>
     </div>
