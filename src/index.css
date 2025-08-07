@@ -22,9 +22,20 @@ body {
   
 }
 
-/* button{
-  padding: 10px;
-  border: 1px solid orangered;
-  border-radius: 5px;
 
-} */
+ @keyframes bounce-soft {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+ }
+ .bounce-soft{
+  animation: bounce-soft 4s infinite;
+ }
+ 
+ html {
+  scroll-behavior: smooth;
+}

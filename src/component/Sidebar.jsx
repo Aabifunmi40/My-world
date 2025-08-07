@@ -1,38 +1,18 @@
-import React from 'react'
-import { Link } from 'react-scroll'
+import React from 'react';
 
-
-
-
-const Sidebar = ({handleToggle}) => {
+const Sidebar = ({ handleToggle }) => {
   return (
-    <div
-        className=" bg-fuchsia-500 min-h-[40vh] fixed w-20 flex items-center justify-center cursor-pointer"
-    >
-      <div className=" flex flex-col items-center  gap-5 ">
-        <Link onClick={handleToggle} to="/home">
-          {" "}
-        <nav>Home</nav>
-        </Link>
-        <Link onClick={handleToggle} to="/about">
-          {" "}
-          <nav>About</nav>
-        </Link>
-        
-        <Link onClick={handleToggle} to="/projects">
-          {" "}
-          <nav>Projects</nav>
-        </Link>
-        <Link onClick={handleToggle} to="/Contact">
-          {" "}
-          <nav>contact</nav>
-        </Link>
-        
-        
-        </div>
-     
+    <div className="bg-white min-h-[50vh] 
+     fixed w-20 flex items-center justify-center cursor-pointer z-50
+     ">
+      <ul className="flex flex-col p-6 space-y-4">
+        <li><a href="#home" onClick={handleToggle}>Home</a></li>
+        <li><a href="#about" onClick={handleToggle}>About</a></li>
+        <li><a href="#project" onClick={handleToggle}>Project</a></li> {/* ✅ matches App.jsx */}
+        <li><a href="#contact" onClick={handleToggle}>Contact</a></li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

@@ -1,20 +1,20 @@
-import React from 'react'
-import Navbar from './component/Navbar'
-import Home from "../src/sections/Home"
-import About from "../src/sections/About"
-import Project from "../src/sections/Project"
-import Contact from "../src/sections/Contact"
+import React from 'react';
+import Navbar from './component/Navbar';
+import Home from './sections/Home';
+import About from './sections/About';
+import Project from './sections/Project';
+import Contact from './sections/Contact';
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Project/>
-      <Contact/>
+      <Navbar />
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="project"><Project /></section> {/* ✅ Note: id="project" */}
+      <section id="contact"><Contact /></section>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
