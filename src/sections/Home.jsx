@@ -1,57 +1,45 @@
-import React from 'react';
-import { IoLogoGithub } from "react-icons/io5";
-import { BsLinkedin } from "react-icons/bs";
+import React from "react";
 
 const Home = () => {
-  const socials = [
-    { name: 'GitHub', url: 'https://github.com/Aabifunmi40' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/' },
-    { name: 'Email', url: 'mailto:kkoredesemi@gmail.com' }
-  ];
-
   return (
-    <div className="bg-gray-400 min-h-screen flex flex-col md:flex-row items-center justify-center px-4 py-8">
-      
-      {/* Text section - LEFT side */}
+    <div className="bg-black min-h-screen flex flex-col md:flex-row items-center text-white justify-center px-4 py-8">
+      {/* Text Section */}
       <div className="w-full md:w-1/2 p-6 flex flex-col justify-center items-center text-center">
-        <h1 className="text-3xl font-bold">Alabi Oluwafunmilayo Mary</h1>
+        <h1 className="text-3xl font-bold ">Alabi Oluwafunmilayo Mary</h1>
 
         <h2 className="mt-6 text-3xl md:text-5xl lg:text-6xl text-amber-300 font-bold">
-          I'm a Software Developer
+          I'm a Fullstack Developer
         </h2>
 
         <p className="mt-2 text-sm md:text-base">
           2 Ongoing Projects | 95% Client Satisfaction | 6 Months of Experience
         </p>
 
-        <div className="mt-4">
-          {socials.map((social, index) => (
-            <a key={index} href={social.url} className="mx-2 underline">{social.name}</a>
-          ))}
-        </div>
-
+        {/* Buttons */}
         <div className="mt-6">
           <a
-            href="mailto:kkoredesemi@gmail.com?subject=Project%20Enquiry"
-            className="mb-3 bg-red-500 text-white px-4 py-2 mr-2 rounded inline-block"
+            href="#contact"
+            className="mb-3 bg-red-500 hover:bg-red-600 text-white px-4 py-2 mr-2 rounded inline-block transition-colors"
           >
             Got a Project
           </a>
-          <button className="mb-3 bg-red-500 text-white px-4 py-2 rounded">My Resume</button>
+
+          <button className="mb-3 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition-colors">
+            My Resume
+          </button>
         </div>
       </div>
 
-      
+      {/* Image Section */}
       <div className="w-full md:w-1/2 flex justify-center items-center p-4">
         <img
-  src="/Alabi_Funmilayo.jpg"
-  alt="Alabi Oluwafunmilayo"
-  className="w-64 h-80 object-contain rounded-xl"
-  style={{
-    boxShadow: '0 4px 20px rgba(255, 0, 0, 0.5)' 
-  }}
-/>
-
+          src="/Alabi_Funmilayo.jpg"
+          alt="Alabi Oluwafunmilayo"
+          className="w-64 h-80 object-contain rounded-xl shadow-lg"
+          style={{
+            boxShadow: "0 4px 20px rgba(255, 0, 0, 0.5)",
+          }}
+        />
       </div>
     </div>
   );

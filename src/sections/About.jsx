@@ -8,7 +8,7 @@ const languages = [
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-gray-300 px-4 py-20 text-center flex flex-col justify-center items-center">
+    <section id="about" className="min-h-screen bg-black text-white px-4 py-20 text-center flex flex-col justify-center items-center">
       <motion.h2
         className="text-4xl font-bold mb-4"
         initial={{ opacity: 0, y: -30 }}

@@ -14,13 +14,13 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <h1 className="font-bold text-xl">
-            Alabi <span className='text-red-400'>Oluwafunmilayo</span>
+            My<span className='text-red-400'>Portfolio</span>
           </h1>
 
           <nav className="flex max-tablet:hidden space-x-6">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#project">Projects</a> {/* ✅ matches id="project" */}
+            <a href="#project">Projects</a> 
             <a href="#contact">Contact</a>
           </nav>
 
