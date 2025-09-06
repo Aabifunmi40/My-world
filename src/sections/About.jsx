@@ -26,8 +26,12 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        As a dedicated tutor in science, I bring a strong foundation in education and a commitment to fostering learning.
-        My enthusiasm for software development has driven me to pursue full stack development, where I focus on building responsive and user-friendly web applications.
+        As a dedicated science tutor, I developed strong communication and problem-solving skills while fostering student 
+        learning. My passion for technology inspired me to transition into software development,
+         where I now specialize in full-stack MERN applications. I enjoy building responsive, user-friendly, and 
+         scalable web solutions that solve real-world problems. 
+        With a blend of educational 
+        experience and technical expertise, I bring adaptability, collaboration, and creativity to every project I work on.
       </motion.p>
 
     
@@ -38,7 +42,7 @@ const About = () => {
           animate={{ x: "-100%" }}
           transition={{
             repeat: Infinity,
-            duration: 10,
+            duration: 40,
             ease: "linear"
           }}
         >
