@@ -1,7 +1,6 @@
 import React from "react";
-import tip from "../../src/assets/tipcalculator.png"
 import quiz from "../../src/assets/quiz.png"
-
+import todo from "../../src/assets/todo.png"
 const projects = [
   {
     id: 1,
@@ -19,10 +18,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "tip calculator",
-    description: "Real-time chat built with Socket.io and a Node/Express backend.",
-    img: tip,
-    href: "https://aabifunmi40.github.io/tip-calculator/"
+    title: "Todo list App",
+    description: "A MERN stack app with authentication, CRUD tasks, and protected routes.",
+    img: todo,
+    href: "https://lnkd.in/gUPYc5ur"
   },
   {
     id: 4,

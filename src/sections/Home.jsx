@@ -3,16 +3,21 @@ import React from "react";
 const Home = () => {
   return (
     <div className="bg-black min-h-screen flex flex-col md:flex-row items-center text-white justify-center px-4 py-8">
+      
       {/* Text Section */}
       <div className="w-full md:w-1/2 p-6 flex flex-col justify-center items-center text-center">
-        <h1 className="text-3xl font-bold ">Alabi Oluwafunmilayo Mary</h1>
+        
+        {/* Name */}
+        <h1 className="text-3xl font-bold">Alabi Oluwafunmilayo Mary</h1>
 
+        {/* Role */}
         <h2 className="mt-6 text-3xl md:text-5xl lg:text-6xl text-amber-300 font-bold">
           I'm a Fullstack Developer
         </h2>
 
+        {/* Stats */}
         <p className="mt-2 text-sm md:text-base">
-          2 Ongoing Projects | 95% Client Satisfaction | 6 Months of Experience
+           | 95% Client Satisfaction | 7 Months of Experience
         </p>
 
         {/* Buttons */}
@@ -24,9 +29,13 @@ const Home = () => {
             Got a Project
           </a>
 
-          <button className="mb-3 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition-colors">
+          <a
+            href="/ALABI_OLUWAFUNMILAYO_CV_UPDATED.pdf" // place your CV inside public/cv/
+            download="ALABI_OLUWAFUNMILAYO_CV_UPDATED.pdf"
+            className="mb-3 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition-colors inline-block"
+          >
             My Resume
-          </button>
+          </a>
         </div>
       </div>
 
@@ -41,6 +50,7 @@ const Home = () => {
           }}
         />
       </div>
+
     </div>
   );
 };
