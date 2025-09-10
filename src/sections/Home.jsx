@@ -44,7 +44,7 @@ const Home = () => {
         <img
           src="/Alabi_Funmilayo.jpg"
           alt="Alabi Oluwafunmilayo"
-          className="w-64 h-80 object-contain rounded-xl shadow-lg"
+          className="w-95 h-100 object-contain rounded-xl shadow-lg"
           style={{
             boxShadow: "0 4px 20px rgba(255, 0, 0, 0.5)",
           }}

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './component/Navbar';
 import Home from './sections/Home';
 import About from './sections/About';
+import Services from './sections/Services'; // ✅ NEW
 import Project from './sections/Project';
 import Contact from './sections/Contact';
 
@@ -11,7 +12,8 @@ const App = () => {
       <Navbar />
       <section id="home"><Home /></section>
       <section id="about"><About /></section>
-      <section id="project"><Project /></section> {/* ✅ Note: id="project" */}
+      <section id="services"><Services /></section> {/* ✅ Added */}
+      <section id="project"><Project /></section>
       <section id="contact"><Contact /></section>
     </div>
   );
