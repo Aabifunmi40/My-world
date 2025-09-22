@@ -31,7 +31,7 @@ const Home = () => {
 
           <a
             href="/ALABI_OLUWAFUNMILAYO_CV_UPDATED.pdf" // place your CV inside public/cv/
-            download="ALABI_OLUWAFUNMILAYO_CV_UPDATED.pdf"
+            download="ALABI_OLUWAFUNMILAYO.pdf"
             className="mb-3 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition-colors inline-block"
           >
             My Resume
