@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import Sidebar from "./Sidebar";
 
-const Navbar = () => {
+const navLinks = [
+  { id: 1, text: "Home", href: "#home" },
+  { id: 2, text: "About", href: "#about" },
+  { id: 3, text: "Services", href: "#services" },
+  { id: 4, text: "Project", href: "#project" },
+  { id: 5, text: "Contact", href: "#contact" }
+];
+
+export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
@@ -10,38 +18,71 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-          {/* Logo */}
-          <h1 className="font-bold text-xl">
-            My<span className='text-red-400'>Portfolio</span>
-          </h1>
+    <nav className="fixed top-0 left-0 w-full bg-black text-white shadow-lg shadow-fuchsia-300/20 z-50">
+      <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <motion.h1
+          className="text-2xl font-bold"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <a href="#home" aria-label="FunmiDev Portfolio Home">
+            Funmi<span className="text-fuchsia-300">Dev</span>
+          </a>
+        </motion.h1>
 
-          {/* Desktop Nav */}
-          <nav className="flex max-tablet:hidden space-x-6">
-            <a href="#home" className="hover:text-red-400">Home</a>
-            <a href="#about" className="hover:text-red-400">About</a>
-            <a href="#services" className="hover:text-red-400">Services</a> {/* NEW */}
-            <a href="#project" className="hover:text-red-400">Projects</a>
-            <a href="#contact" className="hover:text-red-400">Contact</a>
-          </nav>
-
-          {/* Mobile Hamburger */}
-          <section className="hidden max-tablet:block">
-            {toggle ? (
-              <RxCross1 size={35} onClick={handleToggle} />
-            ) : (
-              <RxHamburgerMenu size={35} onClick={handleToggle} />
-            )}
-          </section>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex space-x-6">
+          {navLinks.map((link) => (
+            <motion.a
+              key={link.id}
+              href={link.href}
+              className="text-lg text-gray-200 hover:text-fuchsia-300 focus:outline-fuchsia-300 transition-colors duration-200"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label={`Navigate to ${link.text} section`}
+            >
+              {link.text}
+            </motion.a>
+          ))}
         </div>
 
-        {/* Sidebar for Mobile */}
-        {toggle && <Sidebar handleToggle={handleToggle} />}
-      </nav>
-    </div>
-  );
-};
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden text-2xl text-fuchsia-300 focus:outline-fuchsia-300"
+          onClick={handleToggle}
+          aria-label={toggle ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={toggle}
+        >
+          {toggle ? <RxCross1 /> : <RxHamburgerMenu />}
+        </button>
+      </div>
 
-export default Navbar;
+      {/* Sidebar for Mobile */}
+      {toggle && (
+        <motion.div
+          className="md:hidden bg-gray-900 fixed top-16 left-0 w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-center space-y-6 z-40"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          transition={{ duration: 0.5 }}
+        >
+          {navLinks.map((link) => (
+            <motion.a
+              key={link.id}
+              href={link.href}
+              className="text-2xl text-gray-200 hover:text-fuchsia-300 focus:outline-fuchsia-300 transition-colors duration-200"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleToggle}
+              aria-label={`Navigate to ${link.text} section`}
+            >
+              {link.text}
+            </motion.a>
+          ))}
+        </motion.div>
+      )}
+    </nav>
+  );
+}

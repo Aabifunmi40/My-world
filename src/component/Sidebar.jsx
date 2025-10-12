@@ -1,40 +1,45 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
-const Sidebar = ({ handleToggle }) => {
+const navLinks = [
+  { id: 1, text: "Home", href: "#home" },
+  { id: 2, text: "About", href: "#about" },
+  { id: 3, text: "Services", href: "#services" },
+  { id: 4, text: "Projects", href: "#projects" },
+  { id: 5, text: "Contact", href: "#contact" }
+];
+
+export default function Sidebar({ handleToggle }) {
   return (
-    <div
-      className="bg-white min-h-[50vh] 
-      fixed w-40 flex items-center justify-center cursor-pointer z-50 shadow-md"
+    <motion.nav
+      className="md:hidden bg-gray-900 fixed top-16 left-0 w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-center z-40"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      transition={{ duration: 0.5 }}
+      role="navigation"
+      aria-label="Mobile navigation menu"
+      aria-hidden={!handleToggle}
     >
-      <ul className="flex flex-col p-6 space-y-4 text-black font-medium">
-        <li>
-          <a href="#home" onClick={handleToggle} className="hover:text-red-400">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={handleToggle} className="hover:text-red-400">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#services" onClick={handleToggle} className="hover:text-red-400">
-            Services
-          </a>
-        </li>
-        <li>
-          <a href="#project" onClick={handleToggle} className="hover:text-red-400">
-            Project
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={handleToggle} className="hover:text-red-400">
-            Contact
-          </a>
-        </li>
+      <ul className="flex flex-col items-center space-y-6">
+        {navLinks.map((link) => (
+          <motion.li
+            key={link.id}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: link.id * 0.1 }}
+          >
+            <a
+              href={link.href}
+              className="text-2xl text-gray-200 hover:text-fuchsia-300 focus:outline-fuchsia-300 transition-colors duration-200"
+              onClick={handleToggle}
+              aria-label={`Navigate to ${link.text} section`}
+            >
+              {link.text}
+            </a>
+          </motion.li>
+        ))}
       </ul>
-    </div>
+    </motion.nav>
   );
-};
-
-export default Sidebar;
+}
