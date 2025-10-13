@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import quiz from "../../src/assets/quiz.png";
 import todo from "../../src/assets/todo.png";
-import movieImg from "../../src/assets/Movie.png";
+import movieImg from "../../src/assets/movie.png";
 import zyra from "../../src/assets/zyra hr.png";
 
 const projects = [
