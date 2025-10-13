@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import quiz from "../../src/assets/quiz.png";
 import todo from "../../src/assets/todo.png";
-import movie from "../../src/assets/Movie.png";
+import movieImg from "../../src/assets/Movie.png";
 import zyra from "../../src/assets/zyra hr.png";
 
 const projects = [
@@ -17,7 +17,7 @@ const projects = [
     id: 2,
     title: "Movie Finder",
     description: "A React app with TMDB API integration, enabling users to search movies, view details, and save favorites seamlessly.",
-    img: movie,
+    img: movieImg,
     href: "https://frontendmovie-murex.vercel.app/"
   },
   {
