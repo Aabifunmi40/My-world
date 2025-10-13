@@ -1,4 +1,4 @@
-
+import React from "react";
 import { motion } from "framer-motion";
 import quiz from "../../src/assets/quiz.png";
 import todo from "../../src/assets/todo.png";
