@@ -35,9 +35,9 @@ const Home = () => {
         <p className="mt-4 text-lg text-gray-300 max-w-xl">
           Specializing in MERN stack development, I build responsive and scalable solutions that drive impact.
         </p>
-        <div className="mt-6 text-4xl font-mono text-green-400 bg-gray-900 px-6 py-3 rounded-lg shadow-lg">
+        {/* <div className="mt-6 text-4xl font-mono text-green-400 bg-gray-900 px-6 py-3 rounded-lg shadow-lg">
           <span aria-live="polite">{time.toLocaleTimeString()}</span>
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           <motion.div
             className="bg-gray-800 p-4 rounded-lg shadow-md"
@@ -60,7 +60,7 @@ const Home = () => {
             whileHover={{ scale: 1.05, backgroundColor: "#1f2937" }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-xl font-bold text-amber-300">8+</h3>
+            <h3 className="text-xl font-bold text-amber-300">9+</h3>
             <p className="text-sm">Months of Expertise</p>
           </motion.div>
         </div>

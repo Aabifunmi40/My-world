@@ -25,7 +25,7 @@ const projects = [
     title: "Todo List App",
     description: "A MERN stack app with JWT authentication, CRUD functionality, and protected routes for secure task management.",
     img: todo,
-    href: "https://todo-app-demo.vercel.app" // Update with actual link
+    href: "https://fullstack-todo-app-me1d.vercel.app/" // Update with actual link
   },
   {
     id: 4,
