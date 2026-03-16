@@ -7,6 +7,10 @@ const services = [
   { title: "API Integration", desc: "Integrating RESTful APIs and third-party services like Stripe or Google APIs." },
   { title: "Authentication", desc: "Implementing secure JWT-based authentication and role-based access with Node.js." },
   { title: "Database Management", desc: "Designing efficient MongoDB schemas and optimizing SQL queries." },
+  {
+    title: "Frontend Dev Tutoring",
+    desc: "Group class sessions — physical or online — covering React, JavaScript, HTML/CSS, and Tailwind CSS from the ground up to job-ready level.",
+  },
 ];
 
 const Services = () => {

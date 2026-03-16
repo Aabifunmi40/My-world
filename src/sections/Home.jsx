@@ -44,7 +44,7 @@ const Home = () => {
             whileHover={{ scale: 1.05, backgroundColor: "#1f2937" }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-xl font-bold text-amber-300">4+</h3>
+            <h3 className="text-xl font-bold text-amber-300">6+</h3>
             <p className="text-sm">Projects Delivered</p>
           </motion.div>
           <motion.div
@@ -52,7 +52,7 @@ const Home = () => {
             whileHover={{ scale: 1.05, backgroundColor: "#1f2937" }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-xl font-bold text-amber-300">3</h3>
+            <h3 className="text-xl font-bold text-amber-300">5</h3>
             <p className="text-sm">Satisfied Clients</p>
           </motion.div>
           <motion.div
@@ -60,8 +60,8 @@ const Home = () => {
             whileHover={{ scale: 1.05, backgroundColor: "#1f2937" }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-xl font-bold text-amber-300">9+</h3>
-            <p className="text-sm">Months of Expertise</p>
+            <h3 className="text-xl font-bold text-amber-300">1</h3>
+            <p className="text-sm">year of Expertise</p>
           </motion.div>
         </div>
         <div className="mt-6 flex gap-4">
