@@ -133,7 +133,7 @@ const Home = () => {
               Let's Collaborate →
             </a>
             <a
-              href="/Alabi_Funmi_CV.pdf"
+              href="/ALABIFUNMI_CV.pdf"
               download
               className="inline-flex items-center gap-2 bg-transparent border border-white/20 hover:border-[#C8960C] hover:text-[#C8960C] text-white font-semibold px-7 py-4 rounded-full text-sm transition-all duration-200 hover:-translate-y-1"
             >
