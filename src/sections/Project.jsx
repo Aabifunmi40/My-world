@@ -146,6 +146,7 @@ export default function ProjectsSection() {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08, duration: 0.5, ease: "easeOut" }}
@@ -169,7 +170,7 @@ export default function ProjectsSection() {
                 ) : (
                   /* Featured card without image — decorative placeholder */
                   <div
-                    className="h-32 w-full flex-shrink-0 flex items-center justify-center"
+                    className="h-32 w-full flex-shrink-0 flex items-center justify-center pointer-events-none"
                     style={{
                       background: "linear-gradient(135deg, rgba(200,150,12,0.12) 0%, rgba(27,108,242,0.08) 100%)",
                       borderBottom: "1px solid rgba(200,150,12,0.12)",
@@ -244,6 +245,7 @@ export default function ProjectsSection() {
             href="https://github.com/Aabifunmi40"
             target="_blank"
             rel="noopener noreferrer"
+            
             className="flex-shrink-0 inline-flex items-center gap-2 border border-[#C8960C] text-[#C8960C] hover:bg-[#C8960C] hover:text-[#0D1B2A] font-bold px-7 py-4 rounded-full text-sm transition-all duration-200 hover:-translate-y-1 whitespace-nowrap"
           >
             View GitHub ↗
