@@ -179,7 +179,7 @@ export default function ProjectsSection() {
                       style={{ fontFamily: "'Playfair Display', serif" }}
                       className="text-2xl font-black italic text-[#C8960C]/40 tracking-tight select-none"
                     >
-                      rccglordsheritage.org
+                      www.rccglordsheritage.org
                     </span>
                   </div>
                 )}
